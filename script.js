@@ -9,6 +9,12 @@ function isSameType(value1, value2) {
     return typeof value1 === typeof value2;
 }
 }
+console.log(isSameType(5, 5)); 
+console.log(isSameType(5, '5')); 
+console.log(isSameType(5, null)); 
+console.log(isSameType(5, undefined)); 
+console.log(isSameType(5, NaN)); 
+console.log(isSameType(NaN, NaN)); 
 
 // do not change the code below.
 let value1 = prompt("Enter Start of the Range.");
