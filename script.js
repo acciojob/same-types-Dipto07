@@ -1,20 +1,14 @@
+
 function isSameType(value1, value2) {
-  //your js code here
-	if (typeof value1 === 'number' && !isNaN(value1) && isNaN(value2)) {
-        return false;
+    
+    if (isNaN(value1) && isNaN(value2)) {
+        return true;
     }
-    if (typeof value2 === 'number' && !isNaN(value2) && isNaN(value1)) {
-        return false;
-    }
+
+    
     return typeof value1 === typeof value2;
 }
-}
-console.log(isSameType(5, 5)); 
-console.log(isSameType(5, '5')); 
-console.log(isSameType(5, null)); 
-console.log(isSameType(5, undefined)); 
-console.log(isSameType(5, NaN)); 
-console.log(isSameType(NaN, NaN)); 
+
 
 // do not change the code below.
 let value1 = prompt("Enter Start of the Range.");
